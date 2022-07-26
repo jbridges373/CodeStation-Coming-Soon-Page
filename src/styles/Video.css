@@ -4,39 +4,42 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
-}
-
-.hero {
-    height: 100vh;
-    width: 100%;
-    object-fit: contain;
+    
 }
 
 .hero .content {
     text-align: center;
+    align-items: center;
+    align-content: center;
     position: absolute;
     margin: auto;
     width: 100%;
     height: 100%;
-    top: 40vh;
+    padding-top: 260px;
+    
 }
 
 .hero .content h1 {
     font-size: 4rem;
-    color: #fff;
+    color: #E5FFEE;
+}
+
+.hero .content h2 {
+    font-size: 3rem;
+    color: #E5FFEE;
 }
 
 .hero p {
     font-size: 1.8rem;
     font-weight: 200;
     text-transform: uppercase;
-    margin-bottom: 1.6rem;
-    color: #fff;
+    margin-bottom: 1rem;
+    color: #E5FFEE;
 }
 
 .hero .btn {
-    margin: 1rem .2rem;
+    margin: 1rem .6rem;
+    border-radius: 15px;
 }
 
 @media screen and (max-width:640px) {

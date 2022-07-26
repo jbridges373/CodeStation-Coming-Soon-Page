@@ -1,44 +1,19 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import React from 'react'
 import '../styles/Navbar.css'
+import Logo from "../assets/Logo.png";
+import { motion } from "framer-motion";
 
-const Navbar = () => {
-    const[click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
-
-    const [color, setColor] = useState(false)
-        const changeColor =() => {
-            if(window.scrollY >= 100) {
-                setColor(true)
-            } else {
-                setColor(false)
-            }
-        }
-
-        window.addEventListener('scroll', changeColor)
+const Navbar = () => {    
 
     return (
-        <div className={color ? 'header header-bg' : 'header'}>
-           <Link to='/'><h1>[CODE]_[STATION]</h1></Link> 
-           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-               <li>
-                   <Link to='/'>Home</Link>
-               </li>
-               <li>
-                   <Link to='/'>Event</Link>
-               </li>
-               <li>
-                   <Link to='/'>Training</Link>
-               </li>
-               <li>
-                   <Link to='/'>Contact</Link>
-               </li>
-           </ul>
-           <div className='hamburger' onClick={handleClick}>
-            {click ? (<FaTimes size={20} style={{color: '#fff'}} />) : (<FaBars size={20} style={{color: '#fff'}} />)}
-               
-           </div>
+        <div className="logo">
+           <motion.div
+                initial={{ x: -450 }}
+                animate={{ x: 1600}}
+                transition={{ delay: 0, duration: 20, loop: Infinity }}                
+                >
+           <img src={Logo} alt='Logo Image' style={{ width: '400px' }} />
+           </motion.div>           
         </div>
     )
 }
