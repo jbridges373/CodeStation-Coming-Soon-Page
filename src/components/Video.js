@@ -226,7 +226,91 @@ const Video = () => {
                     }}                        
                     >
                     <h2>Firebase</h2>
-                </motion.div>                      
+                </motion.div>
+
+                {/* HTML */}
+                <motion.div 
+                    className="html"
+                    initial={{
+                        y: -650,
+                        scale: 0,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        y: -900,
+                        scale: 1.5,
+                        opacity: [1, 0]
+                    }}
+                    transition={{
+                        delay: 28,
+                        duration: 8,
+                    }}                        
+                    >
+                    <h2>HTML</h2>
+                </motion.div> 
+
+                {/* UX & UI Design */}
+                <motion.div 
+                    className="design"
+                    initial={{
+                        y: -700,
+                        scale: 0,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        y: -950,
+                        scale: 1.5,
+                        opacity: [1, 0]
+                    }}
+                    transition={{
+                        delay: 31,
+                        duration: 8,
+                    }}                        
+                    >
+                    <h2>UX & UI Design</h2>
+                </motion.div>
+
+                {/* AWS */}
+                <motion.div 
+                    className="aws"
+                    initial={{
+                        y: -750,
+                        scale: 0,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        y: -1000,
+                        scale: 1.5,
+                        opacity: [1, 0]
+                    }}
+                    transition={{
+                        delay: 34,
+                        duration: 8,
+                    }}                        
+                    >
+                    <h2>AWS</h2>
+                </motion.div> 
+
+                {/* MySQL */}
+                <motion.div 
+                    className="mysql"
+                    initial={{
+                        y: -750,
+                        scale: 0,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        y: -1050,
+                        scale: 1.5,
+                        opacity: [1, 0]
+                    }}
+                    transition={{
+                        delay: 37,
+                        duration: 8,
+                    }}                        
+                    >
+                    <h2>MySQL</h2>
+                </motion.div>                        
             </div>
         </div>
     )
