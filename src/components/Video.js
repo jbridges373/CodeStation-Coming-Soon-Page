@@ -43,7 +43,7 @@ const Video = () => {
                 <motion.div 
                     className="networking"
                     initial={{
-                        y: -200,
+                        y: -150,
                         scale: 0,
                         opacity: 0,
                     }}
@@ -211,7 +211,7 @@ const Video = () => {
                 <motion.div 
                     className="firebase"
                     initial={{
-                        y: -600,
+                        y: -650,
                         scale: 0,
                         opacity: 0,
                     }}
@@ -232,7 +232,7 @@ const Video = () => {
                 <motion.div 
                     className="html"
                     initial={{
-                        y: -650,
+                        y: -700,
                         scale: 0,
                         opacity: 0,
                     }}
@@ -253,7 +253,7 @@ const Video = () => {
                 <motion.div 
                     className="design"
                     initial={{
-                        y: -700,
+                        y: -750,
                         scale: 0,
                         opacity: 0,
                     }}
@@ -263,7 +263,7 @@ const Video = () => {
                         opacity: [1, 0]
                     }}
                     transition={{
-                        delay: 31,
+                        delay: 32,
                         duration: 8,
                     }}                        
                     >
@@ -274,17 +274,17 @@ const Video = () => {
                 <motion.div 
                     className="aws"
                     initial={{
-                        y: -750,
+                        y: -800,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -1000,
+                        y: -1050,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
                     transition={{
-                        delay: 34,
+                        delay: 36,
                         duration: 8,
                     }}                        
                     >
@@ -295,22 +295,43 @@ const Video = () => {
                 <motion.div 
                     className="mysql"
                     initial={{
-                        y: -750,
+                        y: -850,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -1050,
+                        y: -1100,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
                     transition={{
-                        delay: 37,
+                        delay: 39,
                         duration: 8,
                     }}                        
                     >
                     <h2>MySQL</h2>
-                </motion.div>                        
+                </motion.div>
+
+                {/* fun */}
+                <motion.div 
+                    className="fun"
+                    initial={{
+                        y: -900,
+                        scale: 0,
+                        opacity: 0,
+                    }}
+                    animate={{
+                        y: -1200,
+                        scale: 1.5,
+                        opacity: [1, 0]
+                    }}
+                    transition={{
+                        delay: 44,
+                        duration: 8,
+                    }}                        
+                    >
+                    <h2>M38 Cohorts TEAM 2 Are THE BEST </h2>
+                </motion.div>                          
             </div>
         </div>
     )
