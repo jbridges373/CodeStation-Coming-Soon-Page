@@ -23,35 +23,75 @@ const Video = () => {
             </video>
             <div className='content'>
                 <motion.h1 
-                    animate={{
+                    initial={{
+                        scale: 0,
                         opacity: 0,
                     }}
-                >
+                    animate={{
+                        scale: [1, 0, 2, 0, 1],                        
+                        opacity: 1,
+                        rotate: [ 360, 180, 90, 90, 180, 360 ]
+                    }}
+                    transition={{
+                        delay: 57,
+                        duration: 5,
+                        type: "spring", 
+                        stiffness: 200
+                    }}                        
+                    >
                     COMING SOON
                 </motion.h1>
                 <motion.p
-                    animate={{
+                    initial={{
+                        scale: 0,
                         opacity: 0,
                     }}
-                >
-                    Your journey to coding the World begins here.
+                    animate={{
+                        scale: [1, 4, 1, 2, 1],                        
+                        opacity: 1
+                    }}
+                    transition={{
+                        delay: 50,
+                        duration: 5,
+                        type: "spring", 
+                        stiffness: 200
+                    }}                        
+                    >
+                    Over 10,000 coding events at your finger tips.
                 </motion.p>
                 <div>
                     <motion.button className='btn'
                         variants={buttonVariants}
                         whileHover="hover"
-                        animate={{
+                        initial={{
+                            scale: 0,
                             opacity: 0,
                         }}
+                        animate={{
+                            scale: 1,                        
+                            opacity: 1
+                        }}
+                        transition={{
+                            delay: 63,
+                            duration: 5,
+                            type: "spring", 
+                            stiffness: 300
+                        }}                        
                         >
                       Training
                     </motion.button>
                     <motion.button className='btn btn-light'
                         variants={buttonVariants}
-                        whileHover="hover"
-                        animate={{
+                        whileInView="hover"
+                        initial={{                            
                             opacity: 0,
                         }}
+                        animate={{                                                    
+                            opacity: 1
+                        }}
+                        transition={{
+                            delay: 65                               
+                        }}                        
                         >
                         Launch
                     </motion.button>
@@ -229,7 +269,7 @@ const Video = () => {
                 <motion.div 
                     className="firebase"
                     initial={{
-                        y: -580,
+                        y: -585,
                         scale: 0,
                         opacity: 0,
                     }}
@@ -250,7 +290,7 @@ const Video = () => {
                 <motion.div 
                     className="html"
                     initial={{
-                        y: -640,
+                        y: -645,
                         scale: 0,
                         opacity: 0,
                     }}
@@ -334,7 +374,7 @@ const Video = () => {
                 <motion.div 
                     className="python"
                     initial={{
-                        y: -870,
+                        y: -880,
                         scale: 0,
                         opacity: 0,
                     }}
@@ -344,7 +384,7 @@ const Video = () => {
                         opacity: [1, 0]
                     }}
                     transition={{
-                        delay: 44,
+                        delay: 43.5,
                         duration: 8,
                     }}                        
                     >
