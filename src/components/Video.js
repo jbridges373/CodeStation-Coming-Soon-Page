@@ -22,18 +22,36 @@ const Video = () => {
                 <source src={spaceVideo} type='video/mp4' />
             </video>
             <div className='content'>
-                <h1>COMING SOON</h1>
-                <p>Your journey to coding the World begins here.</p>
+                <motion.h1 
+                    animate={{
+                        opacity: 0,
+                    }}
+                >
+                    COMING SOON
+                </motion.h1>
+                <motion.p
+                    animate={{
+                        opacity: 0,
+                    }}
+                >
+                    Your journey to coding the World begins here.
+                </motion.p>
                 <div>
                     <motion.button className='btn'
                         variants={buttonVariants}
                         whileHover="hover"
+                        animate={{
+                            opacity: 0,
+                        }}
                         >
                       Training
                     </motion.button>
                     <motion.button className='btn btn-light'
                         variants={buttonVariants}
                         whileHover="hover"
+                        animate={{
+                            opacity: 0,
+                        }}
                         >
                         Launch
                     </motion.button>
@@ -43,12 +61,12 @@ const Video = () => {
                 <motion.div 
                     className="networking"
                     initial={{
-                        y: -150,
+                        y: -120,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -400,
+                        y: -150,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -64,12 +82,12 @@ const Video = () => {
                 <motion.div 
                     className="placement"
                     initial={{
-                        y: -200,
+                        y: -180,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -450,
+                        y: -210,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -85,12 +103,12 @@ const Video = () => {
                 <motion.div 
                     className="contest"
                     initial={{
-                        y: -300,
+                        y: -240,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -550,
+                        y: -265,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -106,12 +124,12 @@ const Video = () => {
                 <motion.div 
                     className="react"
                     initial={{
-                        y: -350,
+                        y: -295,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -600,
+                        y: -320,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -127,12 +145,12 @@ const Video = () => {
                 <motion.div 
                     className="javascript"
                     initial={{
-                        y: -400,
+                        y: -355,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -650,
+                        y: -380,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -148,12 +166,12 @@ const Video = () => {
                 <motion.div 
                     className="css"
                     initial={{
-                        y: -450,
+                        y: -410,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -700,
+                        y: -430,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -169,12 +187,12 @@ const Video = () => {
                 <motion.div 
                     className="tailwind"
                     initial={{
-                        y: -500,
+                        y: -470,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -750,
+                        y: -495,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -190,12 +208,12 @@ const Video = () => {
                 <motion.div 
                     className="mongo"
                     initial={{
-                        y: -550,
+                        y: -530,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -800,
+                        y: -550,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -211,12 +229,12 @@ const Video = () => {
                 <motion.div 
                     className="firebase"
                     initial={{
-                        y: -650,
+                        y: -580,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -850,
+                        y: -605,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -232,12 +250,12 @@ const Video = () => {
                 <motion.div 
                     className="html"
                     initial={{
-                        y: -700,
+                        y: -640,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -900,
+                        y: -670,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -249,16 +267,16 @@ const Video = () => {
                     <h2>HTML</h2>
                 </motion.div> 
 
-                {/* UX & UI Design */}
+                {/* Animation */}
                 <motion.div 
-                    className="design"
+                    className="animation"
                     initial={{
-                        y: -750,
+                        y: -705,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -950,
+                        y: -720,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -267,19 +285,19 @@ const Video = () => {
                         duration: 8,
                     }}                        
                     >
-                    <h2>UX & UI Design</h2>
+                    <h2>Animation</h2>
                 </motion.div>
 
                 {/* AWS */}
                 <motion.div 
                     className="aws"
                     initial={{
-                        y: -800,
+                        y: -765,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -1050,
+                        y: -775,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -295,12 +313,12 @@ const Video = () => {
                 <motion.div 
                     className="mysql"
                     initial={{
-                        y: -850,
+                        y: -820,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -1100,
+                        y: -840,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -312,16 +330,16 @@ const Video = () => {
                     <h2>MySQL</h2>
                 </motion.div>
 
-                {/* fun */}
+                {/* Python */}
                 <motion.div 
-                    className="fun"
+                    className="python"
                     initial={{
-                        y: -900,
+                        y: -870,
                         scale: 0,
                         opacity: 0,
                     }}
                     animate={{
-                        y: -1200,
+                        y: -900,
                         scale: 1.5,
                         opacity: [1, 0]
                     }}
@@ -330,7 +348,7 @@ const Video = () => {
                         duration: 8,
                     }}                        
                     >
-                    <h2>M38 Cohorts TEAM 2 Are THE BEST </h2>
+                    <h2>Python</h2>
                 </motion.div>                          
             </div>
         </div>
