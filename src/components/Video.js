@@ -3,6 +3,16 @@ import '../styles/Video.css'
 import spaceVideo from '../assets/tube.mp4'
 import { motion } from "framer-motion";
 
+const textVariants = {
+    pulse: {
+        scale: 1.1,
+        textShadow: "0px 0px 8px rgb(255, 255, 255)",        
+        transition: {
+            yoyo: 4,            
+        }
+    }    
+}
+
 const buttonVariants = {
     hover: {
         scale: 1.1,
@@ -11,7 +21,7 @@ const buttonVariants = {
         transition: {
             yoyo: Infinity,
         }
-    }
+    }    
 }
 
 
@@ -22,7 +32,9 @@ const Video = () => {
                 <source src={spaceVideo} type='video/mp4' />
             </video>
             <div className='content'>
-                <motion.h1 
+                <motion.h1
+                    variants={textVariants}
+                    whileInView="pulse"                                        
                     initial={{
                         scale: 0,
                         opacity: 0,
@@ -30,11 +42,11 @@ const Video = () => {
                     animate={{
                         scale: [1, 0, 2, 0, 1],                        
                         opacity: 1,
-                        rotate: [ 360, 180, 90, 90, 180, 360 ]
+                        rotate: 360
                     }}
                     transition={{
                         delay: 57,
-                        duration: 5,
+                        duration: 2,
                         type: "spring", 
                         stiffness: 200
                     }}                        
